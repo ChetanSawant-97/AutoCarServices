@@ -1,0 +1,55 @@
+.app__aboutus_div{
+    background-color: white;
+    height: 30vh;
+    width: 80%;
+}
+.app__aboutus{
+    background-color: white;
+    height: 40vh;
+    justify-content: center;
+}
+
+
+.app__about_img_div{
+    width: 80%;
+}
+
+.app__about_img_div img{
+    margin: 20px;
+}
+.app__aboutus_info{
+    width: 50%;  
+    margin: 20px;  
+
+}
+.app__aboutus_info h1{
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10px;
+    height: max-content;
+}
+  .app__aboutus_info h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    height: 2px;
+    background-color: #B20600;
+  }
+
+
+.app__aboutus_info p{
+    color: #4c4c4c;
+}
+.app__aboutus_info h1, .app__aboutus_info p{
+    text-align: left;    
+}
+
+.app__aboutus_info hr{
+    color: #B20600;
+    width: 40%;
+    border: none; /* Remove default border */
+    
+}

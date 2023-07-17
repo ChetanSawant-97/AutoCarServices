@@ -1,0 +1,93 @@
+.app__footer{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+.app__footer_title h1 span{
+    background-color: #FE0000;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 8px;
+}
+
+.app__footer_title h1{
+    color: red;
+    font-weight: 700;
+}
+.app__footer_title{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app__footer_about{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 80%;
+    height: 200px;
+}
+.app__footer_about div{
+    width: 18%;
+}
+.app__social_button{
+    display: flex;
+    background-color: white;
+    margin: 0 15px;
+    color: grey;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.app__social_button:hover{
+  box-shadow: 0 0 10px rgba(203, 15, 15, 0.5);
+  transition: all 0.3s ease;
+  color: #FE0000;
+  cursor: pointer;
+}
+
+.app__social_button span{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.app__footer_socials{
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+.no-decoration {
+    list-style-type: none;
+    text-align: left;
+    color: grey;
+}
+
+.app__footer_about div h6{
+    color: red;
+    text-align: left;
+    padding-left: 32px;
+}
+.app__footer_about div ul li a{
+    color: grey;
+    font-weight: 100;
+}  
+.app__footer_about div ul li a:hover{
+    color: #FE0000;
+    
+}
+
+.app__footer_about div ul li:hover{
+    text-decoration: underline;
+}

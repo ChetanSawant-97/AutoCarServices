@@ -1,0 +1,58 @@
+.app__price__form_form{
+    width: 80%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    margin: auto;
+}
+
+.app__price__form_form h1{
+    width: 80%;
+    margin: auto;
+    padding: 10px 0 10px 0;
+}
+
+
+.app__price__form{
+    height: 70vh;
+}
+
+.app__price__div{
+    width: 45%;
+}
+
+.app__price__form_img{
+    width: 55%;
+}
+
+.check__form__body{
+    width: 80%;
+    height: 80%;
+}
+
+.check__form__header{
+    height: 20%;
+}
+
+.btn__check_price{
+    width: 100%;
+    background-color: #EF6262;
+}
+
+.btn__check_price:hover{
+    background-color: #EB455F;
+}
+
+.form__row{
+    width: 100%;
+    margin: 10px 0 10px 0;
+    height: 12%;
+}
+
+.app__price__form_img img{
+    width: 100% ;
+}

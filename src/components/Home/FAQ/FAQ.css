@@ -1,0 +1,15 @@
+.app__faq{
+    max-height: fit-content;
+}
+
+.app__faq_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.app__faq_accordians{
+    height: 80%;
+    margin-bottom: 30px;
+}

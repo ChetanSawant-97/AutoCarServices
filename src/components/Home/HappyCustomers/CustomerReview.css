@@ -1,0 +1,50 @@
+.app__reviews{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.app__fleet_list-container{
+    display: flex;  
+    flex: 1 1;
+    flex-direction: row;
+    max-width: 1380px;
+    position: relative;
+    background-color: #001C30;
+}
+.app__fleet-list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    /* Add a max-width to limit the width of the scrollable container */
+    max-width: 1380px;
+  }
+  
+.app__fleet-list::-webkit-scrollbar{
+    display: none;
+}
+
+.app__views_card {
+    background-color: white;
+    width: 450px; /* Adjust the width of each card as desired */
+    height: 210px;
+    flex-shrink: 0; /* Prevent the cards from shrinking */
+    margin-right: 15px; /* Add some space between the cards */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .app__views_card p{
+    height: 70%;
+  }
+
+  .app__reviews_buttons{
+    width: 92%;
+    position: absolute;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }

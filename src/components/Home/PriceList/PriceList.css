@@ -1,0 +1,28 @@
+.app__price{
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app__price_header{
+    height: 15%;
+}
+
+.app__price_table{
+    height: 85%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td{
+    width: 50%;
+}
+
+table{
+    border: 2px black solid;
+    border-radius: 5px;
+}

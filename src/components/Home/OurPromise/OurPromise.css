@@ -1,0 +1,75 @@
+.app__promise{
+    flex-direction: column;
+    height: 50vh;
+    background-color: white;
+}
+
+.app__promise_info{
+    padding: 0 25px 0 25px;
+    width: 100%;
+    margin: 10px 10px 10px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+}
+
+.promise_grid-item{
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.promise_grid-item-img{
+    height: 60%;
+}
+
+.promise_grid-item-img img{
+    margin-top: 20px;
+    margin: auto;
+      width: 60%;
+  }
+
+  .app__promise_about{
+    height: 30%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .app__promise_info{
+    height: 70%;
+  }
+
+  .app__pormise_about h1{
+    height: 50%;
+    position: relative;
+  }
+
+  .app__promise_heading{
+    position: relative;
+  }
+  .app__promise_heading::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 13%;
+    height: 2px;
+    background-color: #B20600;
+  }
+
+  .app__services_band{
+    width: 100%;
+    background-color: #9BCDD2;
+  }
+  .app__services_band_info{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+  }
+  .app__services_band_img{
+    width: 60%;
+  }
+  

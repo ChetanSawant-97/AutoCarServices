@@ -1,0 +1,36 @@
+.app__partners{
+    height: max-content;
+}
+
+.app__partners_grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.app__partners_grid_item{
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  justify-self: center;
+  width: 80%;
+}
+
+.app__partners_info h1{
+    height: 20%;
+    padding-top: 2rem;
+    font-size: 3rem;
+    position: relative;
+    text-align: left;
+}
+
+.app__partners_info h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    width: 25%;
+    height: 2px;
+    background-color: #B20600;
+}

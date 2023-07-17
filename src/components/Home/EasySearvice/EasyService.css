@@ -1,0 +1,54 @@
+.app__easy_service{
+    flex-direction: column;
+    height: 70vh;
+}
+
+.app__easy_service_info{
+    padding: 0 25px 0 25px;
+    width: 100%;
+    margin: 10px 10px 10px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+}
+
+.service_grid-item{
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.service_grid-item-img{
+    height: 60%;
+}
+
+.service_grid-item-img img{
+    margin-top: 20px;
+    margin: auto;
+      width: 60%;
+  }
+
+  .app__easy_service_about{
+    height: 30%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .app__easy_service_info{
+    height: 70%;
+  }
+
+  .app__easy_service_about h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 13%;
+    height: 2px;
+    background-color: #B20600;
+  }
+  .app__easy_service_about h1{
+    height: 50%;
+    position: relative;
+  }

@@ -1,0 +1,53 @@
+.app__services_info{
+    width: 60%;
+    margin: 10px 10px 10px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.grid-item{
+    background-color: #A78295;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.grid-item img{
+    width: 60%;
+}
+
+.app__services{
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+}
+
+.app__services_about{
+    width: 40%;
+    height: 60%;
+}
+
+.app__services_about h1{
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+    height: 30%;
+}
+
+.app__services_about p{
+    text-align: left;
+    height: 70%;
+    padding-right: 10px;
+}
+
+
+.app__services_about h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    height: 2px;
+    background-color: #B20600;
+  }
