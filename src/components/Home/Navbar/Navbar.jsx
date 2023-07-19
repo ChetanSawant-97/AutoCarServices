@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import './Navbar.css';
 import images from '../../../constants/images'
 import LogIn from '../Forms/LogIn';
+import SignUp from '../Forms/SignUp';
 
 const Navbar = () => {
-
     const [isOpen, setIsOpen] = useState(false);
+    const [isSignUpOpen, setIsSignUpOpen] = useState(false);
 
   return (
     <div>
@@ -40,7 +41,8 @@ const Navbar = () => {
                             <div className='app__nav__login hover-effect' onClick={()=>{setIsOpen(true)}}> <a className="nav-link text-light" href="#">LogIn</a></div>
                             <LogIn open={isOpen} onClose={()=>{setIsOpen()}}/>
                             <div className='app__nav__seperate'> </div>
-                            <div className='app__nav__signup hover-effect'> <a className="nav-link text-light" href="#">Sign Up</a></div>
+                            <div className='app__nav__signup hover-effect' onClick={()=>{setIsSignUpOpen(true)}}> <a className="nav-link text-light" href="#">Sign Up</a></div>
+                            <SignUp open={isSignUpOpen} onClose={()=>{setIsSignUpOpen()}} />
                         </div>
                     </div>
                 </div>

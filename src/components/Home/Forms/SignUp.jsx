@@ -1,65 +1,67 @@
 import React from 'react'
 import './SignUp.css'
-const SignUp = () => {
-  return (
+import { AiFillCloseCircle } from 'react-icons/ai/index.esm'
+import  ReactDOM  from 'react-dom';
+import images from '../../../constants/images';
+
+
+const SignUp = ({open, onClose}) => {
+  if (!open) return null;
+
+  return ReactDOM.createPortal(
         <div>
-              <div class="container">
-                <div class="title">Registration</div>
-                <div class="content">
-                <form action="#">
-                    <div class="user-details">
-                    <div class="input-box">
-                        <span class="details">Full Name</span>
-                        <input type="text" placeholder="Enter your name" required />
+            <div className='addOverlay'> </div>
+            <div class="container sign__up_formdiv">
+                <div className="d-flex justify-content-end">
+                    <button className='closeFormButton' onClick={onClose}><AiFillCloseCircle className='closeButtonIcon' size={32} /></button>
+                </div>
+                
+                <div className="container-fluid h-custom">
+                    <div className="row justify-content-center align-items-center h-100">
+                        <div className="col-md-6 col-sm-12 ">
+                            <h1 className='h-25 labelWhite' >Register to enjoy our services</h1>
+                            <img src={images.signUp} className="img-fluid" />
+                        </div>
+                        <div className="col-md-6 col-sm-12 d-flex justify-content-center">
+                            <div style={{ backgroundColor: 'black' }} className="form_container rounded-4 m-4">
+                                <form class="form">
+                                    <p class="title">Register </p>
+                                    <p class="message">Signup now and get full access to our app. </p>
+                                        <div class="flex">
+                                        <label>
+                                            <input required="" placeholder="" type="text" class="input" />
+                                            <span>Firstname</span>
+                                        </label>
+
+                                        <label>
+                                            <input required="" placeholder="" type="text" class="input" />
+                                            <span>Lastname</span>
+                                        </label>
+                                    </div>  
+                                            
+                                    <label>
+                                        <input required="" placeholder="" type="email" class="input" />
+                                        <span>Email</span>
+                                    </label> 
+                                        
+                                    <label>
+                                        <input required="" placeholder="" type="password" class="input" />
+                                        <span>Password</span>
+                                    </label>
+                                    <label>
+                                        <input required="" placeholder="" type="password" class="input" />
+                                        <span>Confirm password</span>
+                                    </label>
+                                    <button class="submit">Submit</button>
+                                    <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class="input-box">
-                        <span class="details">Username</span>
-                        <input type="text" placeholder="Enter your username" required />
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Email</span>
-                        <input type="text" placeholder="Enter your email" required />
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Phone Number</span>
-                        <input type="text" placeholder="Enter your number" required />
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Password</span>
-                        <input type="text" placeholder="Enter your password" required />
-                    </div>
-                    <div class="input-box">
-                        <span class="details">Confirm Password</span>
-                        <input type="text" placeholder="Confirm your password" required />
-                    </div>
-                    </div>
-                    <div class="gender-details">
-                    <input type="radio" name="gender" id="dot-1" />
-                    <input type="radio" name="gender" id="dot-2" />
-                    <input type="radio" name="gender" id="dot-3" />
-                    <span class="gender-title">Gender</span>
-                    <div class="category">
-                        <label for="dot-1">
-                        <span class="dot one"></span>
-                        <span class="gender">Male</span>
-                    </label>
-                    <label for="dot-2">
-                        <span class="dot two"></span>
-                        <span class="gender">Female</span>
-                    </label>
-                    <label for="dot-3">
-                        <span class="dot three"></span>
-                        <span class="gender">Prefer not to say</span>
-                        </label>
-                    </div>
-                    </div>
-                    <div class="button">
-                    <input type="submit" value="Register" />
-                    </div>
-                </form>
                 </div>
             </div>
-        </div>
+        </div>,
+        document.getElementById('signUpPortal')
   )
 }
 

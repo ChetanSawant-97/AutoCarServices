@@ -37,7 +37,7 @@ import revvImg from '../assets/partners/revvImg.png'
 import spinnyImg from '../assets/partners/spinnyImg.png'
 import tataAigImg from '../assets/partners/TataAig.png'
 import zoomCarImg from '../assets/partners/zoomCarLogo.png'
-
+import signUp from '../assets/signup.png'
 import zoomCarBanner from '../assets/ZoomCar.png'
 
 
@@ -49,5 +49,6 @@ export default {logo,logo2,logo3,home,aboutus, carWash,
       experience, quality, easyService1, easyService2,
        easyService3, easyService4,
       genuineParts, transperancy, hasselFree, honestprising, services,
-     ackoImg, carDekho, digitImg, hdfcErgoImg, insuranceDekho, meruImg, olaImg, revvImg, spinnyImg,  tataAigImg, zoomCarImg,zoomCarBanner
+     ackoImg, carDekho, digitImg, hdfcErgoImg, insuranceDekho, meruImg, olaImg, revvImg, spinnyImg,  tataAigImg, zoomCarImg,zoomCarBanner,
+     signUp
      };
